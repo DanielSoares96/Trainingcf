@@ -26,14 +26,6 @@
       <viewAttribute id="SALESPRICE"/>
       <viewAttribute id="BASEPRICE"/>
       <viewAttribute id="QUANTITY"/>
-      <viewAttribute id="ID_1"/>
-      <viewAttribute id="CREATEDAT_1"/>
-      <viewAttribute id="CREATEDBY_1"/>
-      <viewAttribute id="MODIFIEDAT_1"/>
-      <viewAttribute id="MODIFIEDBY_1"/>
-      <viewAttribute id="STATUS"/>
-      <viewAttribute id="SALESORDER_ID"/>
-      <viewAttribute id="PRODUCT_ID"/>
     </viewAttributes>
     <calculatedViewAttributes/>
     <input node="TRAINING_PRODUCTS_TBLPRODUCTS">
@@ -51,14 +43,6 @@
       <mapping xsi:type="Calculation:AttributeMapping" target="QUANTITY" source="QUANTITY"/>
     </input>
     <input node="TRAINING_SALESORDER_TBLSALESORDERITEM">
-      <mapping xsi:type="Calculation:AttributeMapping" target="ID_1" source="ID"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="CREATEDAT_1" source="CREATEDAT"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="CREATEDBY_1" source="CREATEDBY"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="MODIFIEDAT_1" source="MODIFIEDAT"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="MODIFIEDBY_1" source="MODIFIEDBY"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="STATUS" source="STATUS"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="SALESORDER_ID" source="SALESORDER_ID"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="PRODUCT_ID" source="PRODUCT_ID"/>
       <mapping xsi:type="Calculation:AttributeMapping" target="ID" source="PRODUCT_ID"/>
     </input>
     <joinAttribute name="ID"/>
@@ -114,38 +98,6 @@
       <descriptions defaultDescription="QUANTITY"/>
       <keyMapping columnObjectName="Join_1" columnName="QUANTITY"/>
     </attribute>
-    <attribute id="ID_1" order="13" displayAttribute="false" attributeHierarchyActive="false">
-      <descriptions defaultDescription="ID_1"/>
-      <keyMapping columnObjectName="Join_1" columnName="ID_1"/>
-    </attribute>
-    <attribute id="CREATEDAT_1" order="14" displayAttribute="false" attributeHierarchyActive="false">
-      <descriptions defaultDescription="CREATEDAT_1"/>
-      <keyMapping columnObjectName="Join_1" columnName="CREATEDAT_1"/>
-    </attribute>
-    <attribute id="CREATEDBY_1" order="15" displayAttribute="false" attributeHierarchyActive="false">
-      <descriptions defaultDescription="CREATEDBY_1"/>
-      <keyMapping columnObjectName="Join_1" columnName="CREATEDBY_1"/>
-    </attribute>
-    <attribute id="MODIFIEDAT_1" order="16" displayAttribute="false" attributeHierarchyActive="false">
-      <descriptions defaultDescription="MODIFIEDAT_1"/>
-      <keyMapping columnObjectName="Join_1" columnName="MODIFIEDAT_1"/>
-    </attribute>
-    <attribute id="MODIFIEDBY_1" order="17" displayAttribute="false" attributeHierarchyActive="false">
-      <descriptions defaultDescription="MODIFIEDBY_1"/>
-      <keyMapping columnObjectName="Join_1" columnName="MODIFIEDBY_1"/>
-    </attribute>
-    <attribute id="STATUS" order="18" displayAttribute="false" attributeHierarchyActive="false">
-      <descriptions defaultDescription="STATUS"/>
-      <keyMapping columnObjectName="Join_1" columnName="STATUS"/>
-    </attribute>
-    <attribute id="SALESORDER_ID" order="19" displayAttribute="false" attributeHierarchyActive="false">
-      <descriptions defaultDescription="SALESORDER_ID"/>
-      <keyMapping columnObjectName="Join_1" columnName="SALESORDER_ID"/>
-    </attribute>
-    <attribute id="PRODUCT_ID" order="20" displayAttribute="false" attributeHierarchyActive="false">
-      <descriptions defaultDescription="PRODUCT_ID"/>
-      <keyMapping columnObjectName="Join_1" columnName="PRODUCT_ID"/>
-    </attribute>
   </attributes>
   <calculatedAttributes/>
   <baseMeasures/>
@@ -155,22 +107,22 @@
 <layout>
   <shapes>
     <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
-      <upperLeftCorner x="100" y="118"/>
+      <upperLeftCorner x="96.00000000000001" y="112"/>
     
       <rectangleSize width="152"/>
     </shape>
   
     <shape expanded="true" modelObjectName="Join_1" modelObjectNameSpace="CalculationView">
-      <upperLeftCorner x="107" y="225"/>
+      <upperLeftCorner x="92" y="216"/>
       <rectangleSize height="30" width="160"/>
     </shape>
     <shape modelObjectName="TRAINING_PRODUCTS_TBLPRODUCTS" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
-      <upperLeftCorner x="26" y="27"/>
-      <rectangleSize width="293.341796875"/>
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
     </shape>
     <shape modelObjectName="TRAINING_SALESORDER_TBLSALESORDERITEM" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
       <upperLeftCorner x="320" y="30"/>
-      <rectangleSize width="354.021484375"/>
+      <rectangleSize width="250"/>
     </shape>
   </shapes>
 </layout>
